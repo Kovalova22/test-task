@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import {Container} from './ModalAdd/AddContainer';
 
-function App() {
+
+import ListHotdogs from './ModalAdd/ListHotdogs';
+
+
+
+const App = () => {
+  const ModalAdd = 'Open Form';
+  const onSubmit = (event) => {
+    event.preventDefault(event);
+};   
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       <div className="header-left"><img className="img-header" src="https://hiphiphooray.com.sg/wp-content/uploads/2017/10/Hip_Hip_Hooray_Hotdog.jpg" 
+       alt="hotdog"/>
+        <h1>Crud</h1> </div>
+        <Container ModalAdd={ModalAdd} onSubmit={onSubmit} />
+         
       </header>
-    </div>
+      <div>
+        <h2 className="h2Main">All hot-dogs</h2>
+        <hr/>
+      </div>
+      <div className="articles">
+      <ListHotdogs /> 
+      </div>
+      </div>
   );
-}
 
+  };
 export default App;

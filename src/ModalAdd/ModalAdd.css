@@ -1,0 +1,56 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.main-modal-button {
+    border: none;
+    background-color: transparent;
+    margin: 30px 20px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between; 
+} 
+.main-modal-button:hover { 
+ background-color: beige;
+}
+
+.modal-addHD {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    padding-top: 7rem;
+}
+
+.modal-body-addHD {
+    padding: 20px;
+    width: 250px;
+    border-radius: 2px;
+    background: #fff;
+    height: 300px;
+    
+}
+.modal-button {
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+}
+.modal-button-item {
+    border: solid black 1px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+.modal-button-item:hover {
+    border: solid #0066ff 1.5px;
+    cursor: pointer;
+    }
+
+input {
+    height: 25px;
+    margin: 5px;
+}

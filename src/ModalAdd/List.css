@@ -1,0 +1,29 @@
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap; 
+    margin:2px;
+    width: 200px;
+}
+
+.article-modal-button {
+    display: flex;
+    justify-content: center;
+    margin:10px;
+    width: 200px;
+    border: none;
+    padding: 5px;
+}
+.article-modal-button-item {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin:10px;
+    width: 200px;
+    border: none;
+    padding: 5px;
+}
+.article-modal-button::after{
+display: none;
+};
